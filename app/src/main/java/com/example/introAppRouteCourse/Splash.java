@@ -18,7 +18,7 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run() {
                 //Do any action here. Now we are moving to next page
-                Intent intent4=new Intent(getApplicationContext() ,loginactivity.class);
+                Intent intent4=new Intent(getApplicationContext() ,signin.class);
                 startActivity(intent4);
                 //This 'finish()' is for exiting the app when back button pressed from Home page which is ActivityHome
                 Splash.this.finish();

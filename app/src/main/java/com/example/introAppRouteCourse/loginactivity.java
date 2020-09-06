@@ -18,15 +18,7 @@ public class loginactivity extends AppCompatActivity {
         username_et=findViewById(R.id.username_et);
         password_et=findViewById(R.id.password_et);
         next_login_btn=(Button)findViewById(R.id.bottom);
-        next_login_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
 
-            public void onClick(View v) {
-            String username=username_et.getText().toString();
-            String password=password_et.getText().toString();
-            Showdialog(username,password);
-            }
-        });
 
     }
     public void Showdialog(String user,String password){
@@ -35,5 +27,11 @@ public class loginactivity extends AppCompatActivity {
                 .setMessage("username is "+user+"\n password is "+password)
                 .create()
                 .show();
+    }
+
+    public void nextlogin(View view) {
+        String username=username_et.getText().toString();
+        String password=password_et.getText().toString();
+        Showdialog(username,password);
     }
 }
