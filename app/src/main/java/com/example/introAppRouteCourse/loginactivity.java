@@ -24,7 +24,8 @@ public class loginactivity extends AppCompatActivity {
     public void Showdialog(String user,String password){
         new AlertDialog.Builder(this)
                 .setTitle("Data")
-                .setMessage("username is "+user+"\n password is "+password)
+                .setMessage(getString(R.string.user_name_in_message_at_dialog_in_login_activity)+user+ "\n" +
+                        getString(R.string.password_in_message_at_dialog_in_login_activity) +password)
                 .create()
                 .show();
     }

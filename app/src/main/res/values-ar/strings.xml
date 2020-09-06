@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">تدريب روت</string>
+    <string name="user_name_in_message_at_dialog_in_login_activity">اسم المستخدم هو </string>
+    <string name="password_in_message_at_dialog_in_login_activity">الرقم السري هو </string>
+    <string name="next_button_in_signin_activity">التالي</string>
+    <string name="enter_your_phone_number">قم بادخال رقم هاتفك</string>
+    <string name="enter_your_name">قم بادخال اسمك</string>
+    <string name="enter_password">ادخل الرقم السري</string>
     <string-array name="ginder">
         <item>ذكر</item>
         <item>انثي</item>
