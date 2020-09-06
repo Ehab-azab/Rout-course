@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class loginactivity extends AppCompatActivity {
     Button next_login_btn;
@@ -31,8 +32,12 @@ public class loginactivity extends AppCompatActivity {
     }
 
     public void nextlogin(View view) {
+
         String username=username_et.getText().toString();
         String password=password_et.getText().toString();
+        if (username.isEmpty()||password.isEmpty()){
+            Toast.makeText(loginactivity.this,"please Enter User name or password",Toast.LENGTH_SHORT).show();
+        }else
         Showdialog(username,password);
     }
 }
