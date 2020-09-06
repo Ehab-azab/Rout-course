@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Route Course</string>
+    <string-array name="ginder">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+</resources>
